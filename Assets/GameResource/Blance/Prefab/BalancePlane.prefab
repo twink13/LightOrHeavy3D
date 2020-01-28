@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6160430274754938619}
+  - component: {fileID: 4179114462447959686}
   m_Layer: 0
   m_Name: BalancePlane
   m_TagString: Untagged
@@ -32,6 +33,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4179114462447959686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810432578854672828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74042cf22017145be94b86d89418cef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveDistance: 0.1
+  MoveDuration: 1
+  HitZone: {fileID: 6684664570061007618}
 --- !u!1 &7623079125114037804
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +136,8 @@ GameObject:
   m_Component:
   - component: {fileID: 509419378579019783}
   - component: {fileID: 5112712516112656609}
-  m_Layer: 0
+  - component: {fileID: 6684664570061007618}
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,3 +171,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6684664570061007618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939519412227372107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bebadafffc36b41629d32a349df6b5eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

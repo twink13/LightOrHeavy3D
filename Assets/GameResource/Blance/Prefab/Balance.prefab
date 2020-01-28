@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7679525093645969795}
+  - component: {fileID: 7101195600433294534}
   m_Layer: 0
   m_Name: Balance
   m_TagString: Untagged
@@ -33,6 +34,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7101195600433294534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2973606822403394676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69447fa4864b4ed6bb254d933275b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Left: {fileID: 7088259745062280584}
+  Right: {fileID: 6369630350409387303}
 --- !u!1 &7426537969359993779
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +150,7 @@ PrefabInstance:
     - target: {fileID: 6810432578854672828, guid: 5cabd88032f5f4055be4669aa4e0071b,
         type: 3}
       propertyPath: m_Name
-      value: BalancePlane
+      value: BalancePlaneLeft
       objectReference: {fileID: 0}
     - target: {fileID: 6160430274754938619, guid: 5cabd88032f5f4055be4669aa4e0071b,
         type: 3}
@@ -200,6 +215,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6602766168456110862}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7088259745062280584 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4179114462447959686, guid: 5cabd88032f5f4055be4669aa4e0071b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6602766168456110862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74042cf22017145be94b86d89418cef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7033016748527498145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210,7 +237,7 @@ PrefabInstance:
     - target: {fileID: 6810432578854672828, guid: 5cabd88032f5f4055be4669aa4e0071b,
         type: 3}
       propertyPath: m_Name
-      value: BalancePlane (1)
+      value: BalancePlaneRight
       objectReference: {fileID: 0}
     - target: {fileID: 6160430274754938619, guid: 5cabd88032f5f4055be4669aa4e0071b,
         type: 3}
@@ -275,3 +302,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7033016748527498145}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6369630350409387303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4179114462447959686, guid: 5cabd88032f5f4055be4669aa4e0071b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7033016748527498145}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74042cf22017145be94b86d89418cef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
