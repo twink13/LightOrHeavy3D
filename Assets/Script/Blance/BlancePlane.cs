@@ -70,9 +70,17 @@ namespace Whacka.Game.LightOrHeavy3D
             transform.DOLocalMove(_StartPos, MoveDuration).OnComplete(() => _Moving = false);
         }
 
-        public void AddWeight()
+        public void AddWeight(Weight weight)
         {
-            Debug.Log("AddWeight!");
+            // todo: 写死的地方要重写
+            Debug.Log($"AddWeight!weight.Number = {weight.Number}");
+            weight.transform.parent = this.transform.parent;
+            weight.transform.localPosition = this.transform.localPosition + Vector3.up * 0.2f;
+        }
+
+        public void RemoveWeight(Weight weight)
+        {
+            Debug.Log($"RemoveWeight!weight.Number = {weight.Number}");
         }
 
         //=====================================================================

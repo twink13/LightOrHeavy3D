@@ -9,6 +9,7 @@ namespace Whacka.Game.LightOrHeavy3D
     {
         public Camera CurrentCamera;
         public LayerMask RayHitLayer;
+        public Weight TestWeight;
 
         private void Awake()
         {
@@ -32,7 +33,16 @@ namespace Whacka.Game.LightOrHeavy3D
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, float.MaxValue, RayHitLayer))
             {
-                hit.collider.GetComponent<BlanceHitZone>().Owner.AddWeight();
+                // todo: 改写到其他地方
+                // todo: 校验是否有变化
+                if (TestWeight.Owner != null)
+                {
+                    TestWeight.Owner.RemoveWeight(TestWeight);
+                }
+                BlancePlane targetPlane = hit.collider.GetComponent<BlanceHitZone>().Owner;
+                targetPlane.AddWeight(TestWeight);
+
+                TestWeight.Owner = targetPlane;
             }
         }
     }
